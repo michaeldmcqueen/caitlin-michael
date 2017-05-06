@@ -1,0 +1,102 @@
+.wrap {
+  @include clearfix;
+  max-width: $container_width;
+  margin: 0 auto;
+  padding: 1em 1em;
+  background: #fff;
+    text-align: center;
+
+}
+
+
+main {
+  @include clearfix;
+  padding: 2em 0;
+  text-align: center;
+
+}
+
+.names {
+  display: block;
+  padding: 2em 0;
+  margin: 0 auto;
+}
+
+.date {
+  display: block;
+  padding: 0 0 2em 0;
+  margin: 0 auto;
+  margin-top: -3em;
+}
+
+.us {
+  display: block;
+  padding: 2em 0 2em 0;
+  margin: 0 auto;
+  @include breakpoint($bp-medium, $no-query: '.no-mq') {
+    padding: 5em 0 2em 0;
+  }
+}
+
+.location {
+  padding-top: 4em;
+    padding-bottom: 4em;
+    p {
+      font-size: 1.2em;
+    color: #9a9a9a;
+    font-weight: 300;
+    }
+
+}
+form {
+  padding: 2em 2em;
+  margin: 2em auto 4em;
+  background: $site-bg;
+  max-width: 600px;
+  text-align: left;
+  input[type="submit"] {
+    background: #315E9F;
+    -webkit-appearance: none;
+    border: 0;
+    color: #fff;
+    font-size: 1em;
+    padding: 15px 25px;
+    letter-spacing: 3px;
+        margin-top: 1em;
+  }
+  input {
+    background: none;
+    border-color: #315E9F;
+  }
+  .webform-component {
+  }
+  label {
+    //width: 100px;
+    text-align: right;
+    margin-right: .5em;
+    color: #315E9F;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+        font-size: 100%;
+
+  }
+  .inline {
+    display: inline-block;
+    input {
+      width: 40px;
+    }
+    &.inline-last {
+      @include breakpoint($bp-medium, $no-query: '.no-mq') {
+      float: right;
+    }
+    }
+  }
+  .names-comp {
+    margin-bottom: 1em;
+    input {
+          width: 100%;
+    max-width: 450px;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+input[type="submit"] {
+  @include btn(#999, #fff, #6286BD, 3px, $normal);
+  font-family: $heading-font-family;
+	display: block;
+	border-radius: 3px;
+	padding: 10px 25px;
+	font-weight: bold;
+	font-size: .8em;
+	color: #373737;
+	cursor: pointer;
+	width: 100%;
+}
